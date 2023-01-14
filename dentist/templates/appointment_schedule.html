@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Appointment Scheduling</h1>
+        <p>Appointment scheduling page</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Filter Appointments</h2>
+                <p>Filter appointments by date, time, and dentist.</p>
+                <a href="{% url 'appointment_schedule' %}" class="btn btn-primary">Filter Appointments</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>Book Appointment</h2>
+                <p>Book an appointment with a dentist.</p>
+                <a href="{% url 'appointment_schedule' %}" class="btn btn-primary">Book Appointment</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>View Appointments</h2>
+                <p>View your appointments.</p>
+                <a href="{% url 'appointment_schedule' %}" class="btn btn-primary">View Appointments</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>Cancel Appointment</h2>
+                <p>Cancel an appointment.</p>
+                <a href="{% url 'appointment_schedule' %}" class="btn btn-primary">Cancel Appointment</a>
+        </div>
+    </div>
+{% endblock %}

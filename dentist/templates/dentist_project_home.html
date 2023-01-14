@@ -1,0 +1,24 @@
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Home Page</h1>
+        <p>Home page</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>General Dental Care</h2>
+                <p>General dental care page</p>
+                <a href="{% url 'general_dental_care' %}" class="btn btn-primary">General Dental Care</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>Procedures</h2>
+                <p>Procedures page</p>
+                <a href="{% url 'procedures' %}" class="btn btn-primary">Procedures</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>Appointment Scheduling</h2>
+                <p>Appointment scheduling page</p>
+                <a href="{% url 'appointment_schedule' %}" class="btn btn-primary">Appointment Scheduling</a>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

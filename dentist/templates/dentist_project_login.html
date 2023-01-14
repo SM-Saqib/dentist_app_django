@@ -1,0 +1,24 @@
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Welcome to My Dentist App</h1>
+        <p>We are dedicated to providing you with the best dental care services. Here, you can find information on general dental care, schedule appointments, and learn about different procedures.</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>General Dental Care</h2>
+                <p>Learn about how to maintain good oral hygiene, the importance of regular check-ups, and common dental problems and their solutions.</p>
+                <a href="{% url 'general_dental_care' %}" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>Appointment Scheduling</h2>
+                <p>View available appointment slots and book appointments with dentists. You can filter available appointments by date, time, and dentist.</p>
+                <a href="{% url 'appointment_schedule' %}" class="btn btn-primary">Schedule Appointment</a>
+            </div>
+            <div class="col-sm-4">
+                <h2>Procedures</h2>
+                <p>Learn about different dental procedures such as tooth extractions, fillings, and dental implants. You can find detailed information on each procedure.</p>
+                <a href="{% url 'procedures' %}" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
